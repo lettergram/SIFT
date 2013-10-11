@@ -8,7 +8,7 @@
 
 int main(int argc, const char* argv[])
 {
-    const cv::Mat input = cv::imread("Small_Galaxy.jpg", 0); //Load as grayscale and pick name
+    const cv::Mat input = cv::imread(argv[1], 0); //Load as grayscale and pick name
 
     cv::SIFT detector;
     std::vector<cv::KeyPoint> keypoints;
